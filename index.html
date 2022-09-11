@@ -61,6 +61,22 @@
         margin-right: auto;
         gap: 10px;
       }
+      .mapouter {
+        /* position: relative; */
+        text-align: right;
+        width: 100%;
+        height: 604px;
+      }
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        width: 90%;
+        height: 604px;
+        margin-left: 50px;
+      }
+      .gmap_iframe {
+        height: 604px !important;
+      }
     </style>
   </head>
   <body>
@@ -97,7 +113,7 @@
         <h1
           style="
             font-family: Sofia;
-            color: rgba(174, 174, 174, 0.667);
+            color: rgba(140, 140, 140, 0.667);
             font-size: 60px;
           "
         >
@@ -107,7 +123,7 @@
 
       <div class="video-container">
         <video
-          src="images/vid-5.mp4"
+          src="images/video_t.mp4"
           id="video-slider"
           loop=""
           autoplay=""
@@ -255,18 +271,84 @@
         />
       </a>
     </div>
-    <img
-      style="
-        margin-top: 30px;
-        margin-bottom: 10px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      "
-      src="https://www.theblondeabroad.com/wp-content/themes/tba/images/TBA-Post-Separator@2x.png"
-      width="750"
-      height="48"
-    />
+
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+    <div>
+      <img
+        style="
+          margin-top: 30px;
+          margin-bottom: 10px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        "
+        src="https://www.theblondeabroad.com/wp-content/themes/tba/images/TBA-Post-Separator@2x.png"
+        width="750"
+        height="48"
+      />
+    </div>
+    <div>
+      <p
+        style="
+          text-align: center;
+          font-family: Combo;
+          font-size: 40px;
+          font-weight: bold;
+          margin-top: 0px;
+        "
+      >
+        My Map View
+      </p>
+    </div>
+
+    <div>
+      <p
+        style="
+          text-align: center;
+          font-family: Combo;
+          font-size: 30px;
+          font-weight: bold;
+          margin-top: 0px;
+        "
+      >
+        My Favourite Locations in India
+      </p>
+    </div>
+
+    <div>
+      <img src="/images/map-bg.jpg" style="width: 100%" alt="" />
+    </div>
+
+    <div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            class="gmap_iframe"
+            width="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=752&amp;height=604&amp;hl=en&amp;q=tourist places in india&amp;t=h&amp;z=5&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe
+          ><a href="https://mcpenation.com/">https://mcpenation.com</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img
+        style="
+          margin-top: 30px;
+          margin-bottom: 10px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        "
+        src="https://www.theblondeabroad.com/wp-content/themes/tba/images/TBA-Post-Separator@2x.png"
+        width="750"
+        height="48"
+      />
+    </div>
     <!-- -------------------------------------------------------------------------------------------------------------- -->
 
     <p style="text-align: center; font-family: Combo; font-size: 30px">
@@ -344,15 +426,6 @@
             display: block;
           "
           >Must visit Places</a
-        ><a
-          href="best_indian_foods.html"
-          style="
-            font-family: Bebas Neue;
-            font-size: 30px;
-            text-align: center;
-            display: block;
-          "
-          >Must Try Foods</a
         >
       </p>
     </div>
@@ -370,6 +443,17 @@
       height="48"
     />
     <!-- -------------------------------------------------------------------------------------------------------------- -->
+    <p
+      style="
+        text-align: center;
+        font-family: Combo;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 0px;
+      "
+    >
+      Subscribe to my Newsletter
+    </p>
     <div>
       <a href="newsletter.html"
         ><img
