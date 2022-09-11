@@ -107,6 +107,7 @@
         background-color: #f1f1f1cb;
       }
       input[type="text"],
+      input[type="email"],
       input[type="submit"] {
         width: 100%;
         padding: 8px;
@@ -115,9 +116,9 @@
         border: 1px solid #ccc;
         box-sizing: border-box;
       }
-      input[type="checkbox"] {
+      /* input[type="checkbox"] {
         margin-top: 16px;
-      }
+      } */
 
       input[type="submit"] {
         background-color: #a08242;
@@ -162,7 +163,11 @@
         margin-right: auto;
       "
     >
-      <form action="">
+      <form
+        action="https://sheetdb.io/api/v1/yrjoar9fwhw38"
+        method="post"
+        id="sheetdb-form"
+      >
         <div class="container">
           <h3 style="font-family: Combo">
             Join The Journey of a Freelance Traveller
@@ -186,8 +191,13 @@
             font-family: Combo;
           "
         >
-          <input type="text" placeholder="Name" name="name" required />
-          <input type="text" placeholder="Email address" name="mail" required />
+          <input type="text" placeholder="Name" name="data[name]" required />
+          <input
+            type="email"
+            placeholder="Email address"
+            name="data[mail]"
+            required
+          />
         </div>
 
         <div class="container" style="font-family: Combo">
@@ -195,5 +205,6 @@
         </div>
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
