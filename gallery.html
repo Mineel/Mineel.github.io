@@ -6,91 +6,334 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Bebas+Neue"
+      href="https://fonts.googleapis.com/css?family=Tangerine|Bebas+Neue|Dancing+Script"
     />
-    <title>The DIgital Voyager's GALLERY</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Combo|Kanit|Cookie|Sacramento|Patrick+Hand"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Digital Voyager's GALLERY</title>
     <style>
+      body {
+        background-color: black;
+      }
       div.gallery {
         margin: 10px;
-        border: 2px solid #ccc;
+        /* border: 2px solid #ccc; */
         float: left;
       }
 
-      div.gallery:hover {
+      /* div.gallery:hover {
         border: 1px solid #777;
-      }
+      } */
 
       div.gallery img {
         width: 100%;
-        height: auto;
+        height: 600px;
       }
 
       div.desc {
         padding: 15px;
         text-align: center;
       }
-      .grid-container {
+      p {
+        color: aliceblue;
+      }
+      .grid-container_2 {
         display: grid;
         grid-template-columns: auto auto auto;
+        gap: 10px;
+        margin-right: 20px;
       }
       .grid-item {
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 20px;
         text-align: center;
       }
+      img {
+        display: block;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     </style>
   </head>
   <body>
-    <div class="grid-container">
+    <header>
+      <div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="MyGear.html">My Gear</a></li>
+          <li><a href="hireMe.html">Hire Me</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li style="float: right"><a href="aboutMe.html">About Me</a></li>
+        </ul>
+      </div>
+    </header>
+    <div>
+      <img
+        style="
+          margin-top: 30px;
+          margin-bottom: 10px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        "
+        src="https://www.theblondeabroad.com/wp-content/themes/tba/images/TBA-Post-Separator@2x.png"
+        width="750"
+        height="48"
+      />
+    </div>
+    <div>
+      <p
+        style="
+          text-align: center;
+          font-family: Combo;
+          font-size: 40px;
+          font-weight: bold;
+          margin-top: 0px;
+        "
+      >
+        My Best Clicks
+      </p>
+    </div>
+    <div>
+      <img
+        style="
+          margin-top: 30px;
+          margin-bottom: 10px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        "
+        src="https://www.theblondeabroad.com/wp-content/themes/tba/images/TBA-Post-Separator@2x.png"
+        width="750"
+        height="48"
+      />
+    </div>
+    <div>
+      <p
+        style="
+          text-align: center;
+          font-family: Combo;
+          font-size: 30px;
+          font-weight: bold;
+          margin-top: 0px;
+        "
+      >
+        RoadTrips
+      </p>
+    </div>
+    <div class="grid-container_2">
       <div class="gallery" style="width: 100%">
-        <a target="_blank" href="Mountains.html">
-          <img
-            src="/images/vertical-scroll-1.jpg"
-            alt="Mountains"
-            width="100%"
-          />
+        <a target="_blank" href="/images/roadtrip_1.jpg">
+          <img src="/images/roadtrip_1.jpg" alt="Photo Missing" width="100%" />
         </a>
-        <div class="desc" style="font-family: Bebas Neue">
-          Watch the Mighty Mountains through my Camera Eyes
-        </div>
       </div>
 
       <div class="gallery" style="width: 100%">
-        <a target="_blank" href="img_forest.jpg">
-          <img
-            src="/images/vertical-scroll-6-intoTheWild.jpg"
-            alt="Forest"
-            width="100%"
-          />
+        <a target="_blank" href="/images/roadtrip_2.jpg">
+          <img src="/images/roadtrip_2.jpg" alt="Photo Missing" width="100%" />
         </a>
-        <div class="desc" style="font-family: Bebas Neue">Into The Wild</div>
       </div>
 
       <div class="gallery" style="width: 100%">
-        <a target="_blank" href="img_lights.jpg">
-          <img
-            src="/images/vertical-scroll-5-photographersParadise.jpg"
-            alt="Northern Lights"
-            width="100%"
-          />
+        <a target="_blank" href="/images/roadtrip_3.jpg">
+          <img src="/images/roadtrip_3.jpg" alt="Photo Missing" width="100%" />
         </a>
-        <div class="desc" style="font-family: Bebas Neue">
-          Iceland : The Photographers Paradise
-        </div>
-      </div>
-
-      <div class="gallery" style="width: 100%">
-        <a target="_blank" href="img_mountains.jpg">
-          <img
-            src="/images/vertical-scroll-4-religiousTrip.jpg"
-            alt="Religious Trip"
-            width="100%"
-          />
-        </a>
-        <div class="desc" style="font-family: Bebas Neue">
-          The Religious trips
-        </div>
       </div>
     </div>
+    <div>
+      <a href="/images/roadtrip_0.jpg" target="_blank"
+        ><img src="/images/roadtrip_0.jpg" alt="Image lost its way"
+      /></a>
+    </div>
+    <div>
+      <img
+        style="
+          margin-top: 30px;
+          margin-bottom: 10px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        "
+        src="https://www.theblondeabroad.com/wp-content/themes/tba/images/TBA-Post-Separator@2x.png"
+        width="750"
+        height="48"
+      />
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+    <div>
+      <p
+        style="
+          text-align: center;
+          font-family: Combo;
+          font-size: 30px;
+          font-weight: bold;
+          margin-top: 0px;
+        "
+      >
+        Monuments
+      </p>
+    </div>
+    <div class="grid-container_2">
+      <div class="gallery" style="width: 100%">
+        <a target="_blank" href="/images/monuments_1.jpg">
+          <img src="/images/monuments_1.jpg" alt="Photo Missing" width="100%" />
+        </a>
+      </div>
+
+      <div class="gallery" style="width: 100%">
+        <a target="_blank" href="/images/monuments_2.jpg">
+          <img src="/images/monuments_2.jpg" alt="Photo Missing" width="100%" />
+        </a>
+      </div>
+
+      <div class="gallery" style="width: 100%">
+        <a target="_blank" href="/images/monuments_3.jpg">
+          <img src="/images/monuments_3.jpg" alt="Photo Missing" width="100%" />
+        </a>
+      </div>
+    </div>
+    <div>
+      <a href="/images/monuments_0.jpg" target="_blank"
+        ><img src="/images/monuments_0.jpg" alt="Image lost its way"
+      /></a>
+    </div>
+    <div>
+      <img
+        style="
+          margin-top: 30px;
+          margin-bottom: 10px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        "
+        src="https://www.theblondeabroad.com/wp-content/themes/tba/images/TBA-Post-Separator@2x.png"
+        width="750"
+        height="48"
+      />
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+    <div>
+      <p
+        style="
+          text-align: center;
+          font-family: Combo;
+          font-size: 30px;
+          font-weight: bold;
+          margin-top: 0px;
+        "
+      >
+        Nature
+      </p>
+    </div>
+    <div class="grid-container_2">
+      <div class="gallery" style="width: 100%">
+        <a target="_blank" href="/images/nature_1.jpg">
+          <img src="/images/nature_1.jpg" alt="Photo Missing" width="100%" />
+        </a>
+      </div>
+
+      <div class="gallery" style="width: 100%">
+        <a target="_blank" href="/images/nature_2.jpg">
+          <img src="/images/nature_2.jpg" alt="Photo Missing" width="100%" />
+        </a>
+      </div>
+
+      <div class="gallery" style="width: 100%">
+        <a target="_blank" href="/images/nature_3.jpg">
+          <img src="/images/nature_3.jpg" alt="Photo Missing" width="100%" />
+        </a>
+      </div>
+    </div>
+    <div>
+      <a href="/images/nature_0.jpg" target="_blank"
+        ><img src="/images/nature_0.jpg" alt="Image lost its way"
+      /></a>
+    </div>
+    <div>
+      <img
+        style="
+          margin-top: 30px;
+          margin-bottom: 10px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        "
+        src="https://www.theblondeabroad.com/wp-content/themes/tba/images/TBA-Post-Separator@2x.png"
+        width="750"
+        height="48"
+      />
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+    <div>
+      <p
+        style="
+          text-align: center;
+          font-family: Combo;
+          font-size: 30px;
+          font-weight: bold;
+          margin-top: 0px;
+        "
+      >
+        All Time Favourites
+      </p>
+    </div>
+    <div class="grid-container_2">
+      <div class="gallery" style="width: 100%">
+        <a target="_blank" href="/images/favourites_1.jpg">
+          <img
+            src="/images/favourites_1.jpg"
+            alt="Photo Missing"
+            width="100%"
+          />
+        </a>
+      </div>
+
+      <div class="gallery" style="width: 100%">
+        <a target="_blank" href="/images/favourites_2.jpg">
+          <img
+            src="/images/favourites_2.jpg"
+            alt="Photo Missing"
+            width="100%"
+          />
+        </a>
+      </div>
+
+      <div class="gallery" style="width: 100%">
+        <a target="_blank" href="/images/favourites_3.jpg">
+          <img
+            src="/images/favourites_3.jpg"
+            alt="Photo Missing"
+            width="100%"
+          />
+        </a>
+      </div>
+    </div>
+    <div>
+      <a href="/images/favourites_0.jpg" target="_blank"
+        ><img src="/images/favourites_0.jpg" alt="Image lost its way"
+      /></a>
+    </div>
+    <div>
+      <img
+        style="
+          margin-top: 30px;
+          margin-bottom: 10px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        "
+        src="https://www.theblondeabroad.com/wp-content/themes/tba/images/TBA-Post-Separator@2x.png"
+        width="750"
+        height="48"
+      />
+    </div>
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
   </body>
 </html>
